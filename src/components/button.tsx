@@ -51,22 +51,15 @@ const Button: Component<ButtonProps> = (props) => {
 const FancyButton = (props: { children: JSX.Element; class?: string }) => {
   return (
     <Button
+      variant="secondary"
       class={cn(
-        "hover:animate-shimmer border bg-[linear-gradient(110deg,#121212,35%,#242424,50%,#121212)] bg-[length:200%_100%] text-white transition-colors shadow-sm shadow-neutral-950",
+        "hover:animate-shimmer border bg-[linear-gradient(110deg,#fff,35%,#ccc,50%,#fff)] bg-[length:200%_100%] transition-colors shadow-sm shadow-neutral-300",
+        "dark:bg-[linear-gradient(110deg,#121212,35%,#333,50%,#121212)] dark:shadow-neutral-950",
         props.class,
       )}
     >
       {props.children}
-      {/* <div class="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[#6d6d6d] to-transparent" /> */}
     </Button>
-  );
-};
-
-export const ShimmerButton = (props: { children: JSX.Element }) => {
-  return (
-    <button class="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-      {props.children}
-    </button>
   );
 };
 

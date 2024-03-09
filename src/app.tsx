@@ -1,8 +1,8 @@
 import { createEffect, type Component } from "solid-js";
 import { useRoutes } from "@solidjs/router";
 import { Button } from "@/components/button";
-import { Text } from "@/components/text";
-import { GithubIcon, TwitterIcon } from "@/components/icons";
+import { Text, textVariants } from "@/components/text";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
 import { For, Match, Switch } from "solid-js";
 
 import { routes } from "./routes";
@@ -64,12 +64,17 @@ const App: Component = () => {
         <Route />
       </main>
 
-      <footer class="flex flex-col items-center justify-between gap-4 mt-10">
+      <footer class="flex flex-col items-center sm:items-start justify-between gap-4 mt-10">
         <div class="flex items-center gap-3">
           <For
             each={[
               { id: "twitter", name: "Twitter", url: "https://twitter.com/chizidotdev" },
               { id: "github", name: "GitHub", url: "https://github.com/chizidotdev" },
+              {
+                id: "linkedin",
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/chizi-wokoma-1b486a226/",
+              },
             ]}
           >
             {(link) => (
@@ -87,6 +92,9 @@ const App: Component = () => {
                     <Match when={link.id === "github"}>
                       <GithubIcon />
                     </Match>
+                    <Match when={link.id === "linkedin"}>
+                      <LinkedinIcon />
+                    </Match>
                   </Switch>
                 </Button>
               </a>
@@ -94,8 +102,9 @@ const App: Component = () => {
           </For>
         </div>
 
-        <Text asLabel>
-          Built with&nbsp;
+        <Text class="text-center sm:text-left">
+          Developed by <span class={textVariants({ asLabel: true })}>@chizidotdev</span>. Built with
+          &nbsp;
           <a
             href="https://solidjs.com/"
             class="text-muted-foreground underline-offset-4 underline"
@@ -104,6 +113,25 @@ const App: Component = () => {
           >
             SolidJS
           </a>
+          &nbsp; and &nbsp;
+          <a
+            href="https://tailwindcss.com/"
+            class="text-muted-foreground underline-offset-4 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TailwindCSS
+          </a>
+          , deployed on &nbsp;
+          <a
+            href="https://railway.app/"
+            class="text-muted-foreground underline-offset-4 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Railway
+          </a>
+          .
         </Text>
       </footer>
     </section>

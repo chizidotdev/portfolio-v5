@@ -1,11 +1,12 @@
 import type { RouteDataFunc } from "@solidjs/router";
 import { createResource, Resource } from "solid-js";
 
-function fetchName(): Promise<typeof homeData> {
-  return Promise.resolve(homeData);
+type DataType = typeof homeData;
+async function fetchName(): Promise<DataType> {
+  return homeData;
 }
 
-const HomeData: RouteDataFunc<never, Resource<typeof homeData>> = () => {
+const HomeData: RouteDataFunc<never, Resource<DataType>> = () => {
   const [data] = createResource(fetchName);
 
   return data;
@@ -17,7 +18,7 @@ export type HomeDataType = typeof HomeData;
 export const homeData = {
   headline: { top: "Building my own ideas.", bottom: "Inspiring you to launch yours." },
   summary:
-    "Software developer and unabashed nerd. Building (and occasionally designing) aesthetic and timeless digital experiences.",
+    "Software developer and unabashed nerd. Building (and occasionally designing) aesthetic and timeless digital experiences. Founder of Aidmedium, currently senior Frontend Engineer at Pioneering Programmers.",
   projects: [
     {
       title: "Copia",

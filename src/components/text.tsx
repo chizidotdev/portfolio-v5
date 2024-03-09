@@ -7,7 +7,7 @@ const textVariants = cva("", {
       h1: "scroll-m-20 text-3xl tracking-tight lg:text-4xl",
       h2: "scroll-m-20 text-2xl tracking-tight first:mt-0",
       h3: "scroll-m-20 text-xl tracking-tight",
-      h4: "scroll-m-20 text-lg font-semibold tracking-tight",
+      h4: "scroll-m-20 text-lg tracking-tight",
       p: "leading-5",
     },
     asLabel: {
