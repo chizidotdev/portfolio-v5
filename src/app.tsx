@@ -95,11 +95,14 @@ const App: Component = () => {
         </div>
 
         <Text asLabel>
-          Built with
-          <a href="https://solidjs.com/">
-            <Button variant="link" class="px-1">
-              SolidJS
-            </Button>
+          Built with&nbsp;
+          <a
+            href="https://solidjs.com/"
+            class="text-muted-foreground underline-offset-4 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SolidJS
           </a>
         </Text>
       </footer>
