@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import Text from './text.svelte';
-	import Button from './button.svelte';
+	import { Button, Text } from '$lib/components';
 </script>
 
 <section class="py-20 space-y-2">

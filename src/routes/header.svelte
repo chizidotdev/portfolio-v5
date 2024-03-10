@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { personalData } from '$lib/config';
-	import Text from './text.svelte';
-	import Button from './button.svelte';
-	import TwitterIcon from './twitter-icon.svelte';
-	import GithubIcon from 'lucide-svelte/icons/github';
+	import { Button, Text } from '$lib/components';
+	import { TwitterIcon, GithubIcon } from '$lib/icons';
 </script>
 
 <header class="flex items-center justify-between">
@@ -27,7 +25,7 @@
 						{#if link.id === 'twitter'}
 							<TwitterIcon />
 						{:else if link.id === 'github'}
-							<GithubIcon class="p-0.5" />
+							<GithubIcon />
 						{/if}
 					</Button>
 				{/if}

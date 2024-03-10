@@ -1,9 +1,6 @@
 <script lang="ts">
-	import Text from './text.svelte';
 	import { personalData as data } from '$lib/config';
-	import Button from './button.svelte';
-	import ArticleItem from './article-item.svelte';
-	import Badge from './badge.svelte';
+	import { Button, Text, ArticleItem, Badge } from '$lib/components';
 </script>
 
 <section class="my-16 md:my-24 space-y-14 md:space-y-20">
@@ -26,23 +23,6 @@
 
 	<section>
 		<Text variant="h4">Projects</Text>
-		<!-- <For each={data.projects}> -->
-		<!--   {(project) => ( -->
-		<!--     <a href={project.link} target="_blank" rel="noopener noreferrer"> -->
-		<!--       <ArticleItem> -->
-		<!--         <Text variant="h4" class="flex items-center gap-2"> -->
-		<!--           {project.title} -->
-		<!--           <Show when={project.pending}> -->
-		<!--             <Badge variant="secondary">In progress</Badge> -->
-		<!--           </Show> -->
-		<!--         </Text> -->
-		<!--         <Text asLabel class="mt-1"> -->
-		<!--           {project.summary} -->
-		<!--         </Text> -->
-		<!--       </ArticleItem> -->
-		<!--     </a> -->
-		<!--   )} -->
-		<!-- </For> -->
 		{#each data.projects as project}
 			<a href={project.link} target="_blank" rel="noopener noreferrer">
 				<ArticleItem>
