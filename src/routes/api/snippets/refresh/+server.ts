@@ -29,9 +29,10 @@ const snippetFields = `
 `;
 
 const allSnippetsQuery = `
-*[_type == "snippet"] | order(date desc, _updatedAt desc) {
-  ${snippetFields}
-}`;
+  *[_type == "snippet"] | order(date desc, _updatedAt desc) {
+    ${snippetFields}
+  }
+`;
 const getAllSnippets = async () => {
 	const snippets: SanitySnippet[] = await sanityClient.fetch(allSnippetsQuery);
 	return snippets;

@@ -4,7 +4,7 @@ import { error } from '@sveltejs/kit';
 export const load: PageLoad = async ({ params }) => {
 	try {
 		console.log('>>>>.. ', params);
-		const snippet = await import(`/src/snippets/${params.slug}.md`);
+		const snippet = await import(`../../../snippets/${params.slug}.md`);
 
 		return {
 			content: snippet.default,

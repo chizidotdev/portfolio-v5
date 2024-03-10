@@ -7,7 +7,7 @@
 </script>
 
 <section class="space-y-14 md:space-y-20">
-	<section class="space-y-4">
+	<section class="flex flex-col gap-4">
 		<div class="flex flex-col capitalize">
 			<Text variant="h1">{personalData.headline.top}</Text>
 			<Text asLabel variant="h1">
@@ -17,7 +17,9 @@
 
 		<Text>{personalData.summary}</Text>
 
-		<Button variant="primary">Contact me</Button>
+		<a href="mailto:chiziwokoma@gmail.com" class="mt-2">
+			<Button variant="primary">Contact me</Button>
+		</a>
 	</section>
 
 	<SnippetsPreview snippets={data.snippets} />
