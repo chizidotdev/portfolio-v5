@@ -14,7 +14,7 @@
 						'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
 					secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
 					ghost: 'hover:bg-accent hover:text-accent-foreground',
-					link: 'text-muted-foreground underline-offset-4 underline',
+					link: 'text-muted-foreground underline-offset-4 underline px-0',
 					primary: [
 						'hover:animate-shimmer border bg-[linear-gradient(110deg,#fff,35%,#ccc,50%,#fff)] bg-[length:200%_100%] transition-colors shadow-sm shadow-neutral-300',
 						'text-secondary-foreground dark:bg-[linear-gradient(110deg,#121212,35%,#333,50%,#121212)] dark:shadow-neutral-950'

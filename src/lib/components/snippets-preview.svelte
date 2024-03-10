@@ -12,19 +12,12 @@
 
 		<div class="flex flex-col gap-2 mt-4">
 			{#each snippets as snippet}
-				<ArticleItem variant="compact">
-					<div class="flex items-center gap-4">
-						<!-- <img -->
-						<!--   src={urlForImage(snippet.icon).url()} -->
-						<!--   alt={snippet.title} -->
-						<!--   class="rounded-full object-cover w-10 h-10 opacity-85" -->
-						<!-- /> -->
-						<div>
-							<Text variant="h4">{snippet.title}</Text>
-							<Text asLabel>{snippet.description}</Text>
-						</div>
-					</div>
-				</ArticleItem>
+				<a href={`/snippets/${snippet.slug}`}>
+					<ArticleItem variant="compact">
+						<Text variant="h4">{snippet.title}</Text>
+						<Text asLabel>{snippet.description}</Text>
+					</ArticleItem>
+				</a>
 			{/each}
 		</div>
 

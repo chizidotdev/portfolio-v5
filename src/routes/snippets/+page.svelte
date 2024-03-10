@@ -4,26 +4,30 @@
 
 	export let data: PageData;
 	$: snippets = data.snippets;
+	let description =
+		"A collection of code snippets I've developed/stolen over time and tend to use often. Ranging from random utililty hooks to environment setup instructions.";
 </script>
 
+<svelte:head>
+	<title>Snippets - Chizi Victor</title>
+	<meta name="description" content={description} />
+</svelte:head>
+
 {#if snippets?.length}
-	<section class="py-20">
+	<section>
 		<Text variant="h1" class="flex items-center gap-2">
 			Snippets <Badge>Beta</Badge>
 		</Text>
-		<Text>
-			These are a collection of code snippets I've developed/stolen over time and tend to use often.
-			Ranging from random utililty hooks to environment setup instructions.
-		</Text>
+		<Text>{description}</Text>
 
 		<div class="grid sm:grid-cols-2 gap-3 mt-10">
 			{#each snippets as snippet}
-				<ArticleItem variant="compact" showLink={false}>
-					<div>
+				<a href={`/snippets/${snippet.slug}`}>
+					<ArticleItem variant="compact" showLink={false}>
 						<Text variant="h4">{snippet.title}</Text>
 						<Text asLabel>{snippet.description}</Text>
-					</div>
-				</ArticleItem>
+					</ArticleItem>
+				</a>
 			{/each}
 		</div>
 	</section>

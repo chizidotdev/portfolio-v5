@@ -8,7 +8,7 @@
 
 <article
 	class={cn(
-		'flex items-center gap-4',
+		'flex items-center gap-4 h-full',
 		'group py-4 rounded-lg transition-colors',
 		variant === 'compact' && 'px-4 bg-gradient-to-br from-muted border border-muted'
 	)}

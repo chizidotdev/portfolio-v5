@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = true;
 	import '../app.css';
 	import '@fontsource-variable/jetbrains-mono';
 	import '@fontsource-variable/bricolage-grotesque';
@@ -12,7 +11,7 @@
 >
 	<Header />
 
-	<main>
+	<main class="flex-1 my-20">
 		<slot />
 	</main>
 

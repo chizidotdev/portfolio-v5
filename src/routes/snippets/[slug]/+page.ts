@@ -1,0 +1,16 @@
+import type { PageLoad } from './$types';
+import { error } from '@sveltejs/kit';
+
+export const load: PageLoad = async ({ params }) => {
+	try {
+		console.log('>>>>.. ', params);
+		const snippet = await import(`/src/snippets/${params.slug}.md`);
+
+		return {
+			content: snippet.default,
+			meta: snippet.metadata as Snippet
+		};
+	} catch (e) {
+		error(404, 'Snippet not found');
+	}
+};

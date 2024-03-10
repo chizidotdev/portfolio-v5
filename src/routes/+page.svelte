@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<section class="my-16 md:my-24 space-y-14 md:space-y-20">
+<section class="space-y-14 md:space-y-20">
 	<section class="space-y-4">
 		<div class="flex flex-col capitalize">
 			<Text variant="h1">{personalData.headline.top}</Text>
