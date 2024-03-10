@@ -6,11 +6,13 @@
 
 <header class="flex items-center justify-between">
 	<div class="flex items-center gap-3">
-		<img
-			src="https://avatars.githubusercontent.com/u/92993973"
-			class="w-12 h-12 rounded-full"
-			alt="Profile avatar"
-		/>
+		<a href="/">
+			<img
+				src="https://avatars.githubusercontent.com/u/92993973"
+				class="w-12 h-12 rounded-full"
+				alt="Profile avatar"
+			/></a
+		>
 		<div>
 			<Text variant="h4">Chizi Victor</Text>
 			<Text asLabel>Software Engineer</Text>
