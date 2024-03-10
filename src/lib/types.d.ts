@@ -1,11 +1,22 @@
-type SnippetPreview = {
-  _id: string;
-  slug: string;
-  title: string;
-  description: string;
-  icon: string;
+declare module '@sanity/block-content-to-markdown';
+
+type Snippet = {
+	title: string;
+	description: string;
+	date: string;
+	published: boolean;
+	slug: string;
 };
 
-type Snippet = SnippetPreview & {
-  body: any;
+type SanitySnippetPreview = {
+	_id: string;
+	slug: string;
+	title: string;
+	description: string;
+	icon: string;
+};
+
+type SanitySnippet = SanitySnippetPreview & {
+	body: any;
+	_updatedAt: string;
 };
