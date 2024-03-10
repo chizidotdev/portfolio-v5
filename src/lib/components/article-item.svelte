@@ -10,10 +10,10 @@
 	class={cn(
 		'flex items-center gap-4',
 		'group py-4 rounded-lg transition-colors',
-		variant === 'compact' && 'px-4 bg-gradient-to-br from-muted to-transparent'
+		variant === 'compact' && 'px-4 bg-gradient-to-br from-muted border border-muted'
 	)}
 >
-	<div class="flex-1"><slot /></div>
+	<div class="h-full flex-1"><slot /></div>
 
 	{#if showLink}
 		<span class="group-hover:opacity-100 md:opacity-0 md:px-4 transition-opacity">
