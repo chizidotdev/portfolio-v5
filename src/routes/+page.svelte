@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { personalData } from '$lib/config';
 	import { SnippetsPreview, Button, Text, ArticleItem, Badge } from '$lib/components';
+	import { MailIcon } from '$lib/icons';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -18,7 +19,7 @@
 		<Text>{personalData.summary}</Text>
 
 		<a href="mailto:chiziwokoma@gmail.com" class="mt-2">
-			<Button variant="primary">Contact me</Button>
+			<Button variant="primary"><MailIcon class="w-4 mr-2" /> Contact me</Button>
 		</a>
 	</section>
 

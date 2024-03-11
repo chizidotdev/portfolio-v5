@@ -34,6 +34,11 @@ export const personalData = {
 	socials: [
 		{ id: 'twitter', name: 'Twitter', url: 'https://twitter.com/chizidotdev' },
 		{ id: 'github', name: 'GitHub', url: 'https://github.com/chizidotdev' },
-		{ id: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/chizi-wokoma-1b486a226/' }
+		{
+			id: 'linkedin',
+			name: 'LinkedIn',
+			url: 'https://www.linkedin.com/in/chizi-wokoma-1b486a226/'
+		},
+		{ id: 'mail', name: 'Email', url: 'mailto:chiziwokoma@gmail.com' }
 	]
 } as const;

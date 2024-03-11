@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Text, ArticleItem, Badge, Button } from '$lib/components';
-	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
+	import { Text, Button } from '$lib/components';
+	import { ChevronLeftIcon } from '$lib/icons';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -14,7 +14,7 @@
 </svelte:head>
 
 <a href="/snippets">
-	<Button variant="outline" class="mb-5"><ChevronLeft class="w-4 mr-2 mb-0.5" /> Back</Button>
+	<Button variant="outline" class="mb-5"><ChevronLeftIcon class="w-4 mr-2" /> Back</Button>
 </a>
 
 <article class="flex flex-col gap-10">

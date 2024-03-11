@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { personalData } from '$lib/config';
 	import { Button, Text } from '$lib/components';
-	import { TwitterIcon, GithubIcon, LinkedinIcon } from '$lib/icons';
+	import { TwitterIcon, GithubIcon, LinkedinIcon, MailIcon } from '$lib/icons';
 </script>
 
 <footer class="flex flex-col items-center sm:items-start justify-between gap-4 mt-10">
@@ -15,6 +15,8 @@
 						<GithubIcon />
 					{:else if link.id === 'linkedin'}
 						<LinkedinIcon class="p-0.5" />
+					{:else if link.id === 'mail'}
+						<MailIcon class="p-0.5" />
 					{/if}
 				</Button>
 			</a>

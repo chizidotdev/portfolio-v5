@@ -22,7 +22,7 @@
 	<div class="flex items-center gap-3">
 		{#each personalData.socials as link}
 			<a href={link.url} class="flex items-center" target="_blank" rel="noopener noreferrer">
-				{#if link.id !== 'linkedin'}
+				{#if link.id !== 'linkedin' && link.id !== 'mail'}
 					<Button variant="outline" size="icon">
 						{#if link.id === 'twitter'}
 							<TwitterIcon />
