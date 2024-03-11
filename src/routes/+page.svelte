@@ -10,7 +10,10 @@
 <svelte:head>
 	<title>Chizi Victor - Software Developer</title>
 	<meta name="title" content="Chizi Victor - Software Developer" />
-	<meta name="description" content="Creative software developer and unabashed nerd." />
+	<meta
+		name="description"
+		content="Software developer and unabashed nerd. Building (and occasionally designing) accessible and timeless digital experiences."
+	/>
 </svelte:head>
 
 <section class="space-y-14 md:space-y-20">
