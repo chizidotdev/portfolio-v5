@@ -10,6 +10,7 @@
 
 <svelte:head>
 	<title>Snippets - Chizi Victor</title>
+	<meta name="title" content="Snippets - Chizi Victor" />
 	<meta name="description" content={description} />
 </svelte:head>
 

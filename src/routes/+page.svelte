@@ -7,6 +7,12 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>Chizi Victor - Software Developer</title>
+	<meta name="title" content="Chizi Victor - Software Developer" />
+	<meta name="description" content="Creative software developer and unabashed nerd." />
+</svelte:head>
+
 <section class="space-y-14 md:space-y-20">
 	<section class="flex flex-col gap-4">
 		<div class="flex flex-col capitalize">

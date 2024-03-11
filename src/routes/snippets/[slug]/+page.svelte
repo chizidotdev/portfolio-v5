@@ -18,11 +18,12 @@
 </a>
 
 <article class="flex flex-col gap-10">
-	<hgroup>
+	<hgroup class="space-y-1">
 		<Text variant="h1" class="flex items-center gap-2">
 			{data.meta.title}
 		</Text>
 		<Text>{data.meta.description}</Text>
+		<!-- <Text asLabel>{formatDate(new Date(data.meta.date), 'MMM DD, YYYY')}</Text> -->
 	</hgroup>
 
 	<div>
