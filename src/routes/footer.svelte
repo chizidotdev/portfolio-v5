@@ -1,24 +1,28 @@
 <script lang="ts">
 	import { personalData } from '$lib/config';
-	import { Button, Text } from '$lib/components';
+	import { buttonStyles, Text } from '$lib/components';
 	import { TwitterIcon, GithubIcon, LinkedinIcon, MailIcon } from '$lib/icons';
 </script>
 
-<footer class="flex flex-col items-center sm:items-start justify-between gap-4 mt-10">
+<footer class="flex flex-col items-center sm:items-start justify-between gap-10 mt-10">
 	<div class="flex items-center gap-3">
 		{#each personalData.socials as link}
-			<a href={link.url} class="flex items-center" target="_blank" rel="noopener noreferrer">
-				<Button variant="outline" size="icon">
-					{#if link.id === 'twitter'}
-						<TwitterIcon />
-					{:else if link.id === 'github'}
-						<GithubIcon />
-					{:else if link.id === 'linkedin'}
-						<LinkedinIcon class="p-0.5" />
-					{:else if link.id === 'mail'}
-						<MailIcon class="p-0.5" />
-					{/if}
-				</Button>
+			<a
+				href={link.url}
+				class={buttonStyles({ variant: 'outline', size: 'icon' })}
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label={link.id}
+			>
+				{#if link.id === 'twitter'}
+					<TwitterIcon />
+				{:else if link.id === 'github'}
+					<GithubIcon />
+				{:else if link.id === 'linkedin'}
+					<LinkedinIcon class="p-0.5" />
+				{:else if link.id === 'mail'}
+					<MailIcon class="p-0.5" />
+				{/if}
 			</a>
 		{/each}
 	</div>

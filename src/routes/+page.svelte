@@ -19,7 +19,7 @@
 		<Text>{personalData.summary}</Text>
 
 		<a href="mailto:chiziwokoma@gmail.com" class="mt-2">
-			<Button variant="primary"><MailIcon class="w-4 mr-2" /> Contact me</Button>
+			<Button variant="primary"><MailIcon class="w-4 mr-2 stroke-foreground" /> Contact me</Button>
 		</a>
 	</section>
 

@@ -13,7 +13,7 @@
 	<meta property="og:type" content="article" />
 </svelte:head>
 
-<a href="/snippets">
+<a href="..">
 	<Button variant="outline" class="mb-5"><ChevronLeftIcon class="w-4 mr-2" /> Back</Button>
 </a>
 
