@@ -8,7 +8,7 @@
 	<div class="flex items-center gap-3">
 		<a href="/">
 			<img
-				src="https://avatars.githubusercontent.com/u/92993973s=80"
+				src="https://avatars.githubusercontent.com/u/92993973?s=80"
 				class="w-12 h-12 rounded-full"
 				alt="Profile avatar"
 			/></a

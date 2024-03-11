@@ -27,7 +27,19 @@
 		/>
 		<meta property="twitter:image" content="/preview.png" />
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
 		%sveltekit.head%
+
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+
+			gtag('js', new Date());
+			gtag('config', '%sveltekit.env.PUBLIC_GOOGLE_TAG_ID%');
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
