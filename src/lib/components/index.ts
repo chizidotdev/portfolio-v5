@@ -3,6 +3,7 @@ import Button from './button.svelte';
 import Badge from './badge.svelte';
 import ArticleItem from './article-item.svelte';
 import SnippetsPreview from './snippets-preview.svelte';
+import Analytics from './analytics.svelte';
 import { buttonStyles } from './button';
 
-export { Text, Button, Badge, ArticleItem, SnippetsPreview, buttonStyles };
+export { Text, Button, Badge, ArticleItem, SnippetsPreview, Analytics, buttonStyles };
