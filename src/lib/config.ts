@@ -7,8 +7,8 @@ export const appConfig = {
 export const personalData = {
 	headline: { top: 'Building my own ideas.', bottom: 'Inspiring you to launch yours.' },
 	summary: `Software developer and unabashed nerd.
-        Building (and occasionally designing) aesthetic and timeless digital experiences. 
-        Founder of Aidmedium, currently Senior Frontend Engineer at Pioneering Programmers.`,
+        Building (and occasionally designing) accessible and timeless digital experiences. 
+        Currently Frontend Engineer at Pioneering Programmers.`,
 	projects: [
 		{
 			title: 'Copia',
