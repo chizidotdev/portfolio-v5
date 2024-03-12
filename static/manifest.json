@@ -1,32 +1,33 @@
 {
-    "theme_color": "#121212",
-    "background_color": "#121212",
-    "display": "browser",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Chizi Victor - Software Developer",
-    "short_name": "Chizi Victor",
-    "description": "Creative software developer and unabashed nerd.",
-    "icons": [
-        {
-            "src": "/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+	"theme_color": "#121212",
+	"background_color": "#121212",
+	"display": "standalone",
+	"id": "/",
+	"scope": "/",
+	"start_url": "/",
+	"name": "Chizi Victor - Software Developer",
+	"short_name": "Chizi Victor",
+	"description": "Software developer and unabashed nerd. Building (and occasionally designing) accessible and timeless digital experiences.",
+	"icons": [
+		{
+			"src": "/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-256x256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-384x384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
 }

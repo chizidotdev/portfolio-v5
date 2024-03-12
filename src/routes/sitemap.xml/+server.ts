@@ -3,7 +3,6 @@ import type { PageLoad } from '../$types';
 const pages = ['', 'snippets'];
 
 export const GET: PageLoad = async ({ fetch, url }) => {
-	console.log(url);
 	const res = await fetch('/api/snippets');
 	let snippets: Snippet[] = await res.json();
 

@@ -9,6 +9,11 @@
 	export let size: $$Props['size'] = 'default';
 </script>
 
-<button {...$$props} class={buttonStyles({ variant, size, class: $$props.class })}>
+<button {...$$props} class={buttonStyles({ variant, size, class: $$props.class })} on:click>
+	<!-- {#if variant === 'primary'} -->
+	<!-- 	<div -->
+	<!-- 		class="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-primary to-transparent" -->
+	<!-- 	/> -->
+	<!-- {/if} -->
 	<slot />
 </button>

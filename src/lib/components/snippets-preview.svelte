@@ -7,7 +7,7 @@
 {#if snippets?.length}
 	<section class="">
 		<Text variant="h4" class="flex items-center gap-2">
-			Snippets <Badge>Beta</Badge>
+			Snippets <Badge>New</Badge>
 		</Text>
 
 		<div class="flex flex-col gap-2 mt-4">

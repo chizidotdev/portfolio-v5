@@ -5,6 +5,8 @@
 </script>
 
 <footer class="flex flex-col items-center sm:items-start justify-between gap-10 mt-10">
+	<a href="/snippets" class={buttonStyles({ variant: 'link' })}>Snippets</a>
+
 	<div class="flex items-center gap-3">
 		{#each personalData.socials as link}
 			<a
@@ -31,7 +33,7 @@
 		Developed by <span class="text-muted-foreground">@chizidotdev</span>. Built with
 		<a
 			href="https://kit.svelte.dev"
-			class="text-muted-foreground underline-offset-4 underline"
+			class={buttonStyles({ variant: 'link' })}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
@@ -40,7 +42,7 @@
 		and
 		<a
 			href="https://tailwindcss.com/"
-			class="text-muted-foreground underline-offset-4 underline"
+			class={buttonStyles({ variant: 'link' })}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
@@ -49,7 +51,7 @@
 		deployed on
 		<a
 			href="https://railway.app/"
-			class="text-muted-foreground underline-offset-4 underline"
+			class={buttonStyles({ variant: 'link' })}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
