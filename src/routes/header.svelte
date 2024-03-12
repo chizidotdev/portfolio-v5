@@ -14,7 +14,7 @@
 			/></a
 		>
 		<div>
-			<Text variant="h4">Chizi Victor</Text>
+			<Text variant="h3">Chizi Victor</Text>
 			<Text asLabel>Software Engineer</Text>
 		</div>
 	</div>

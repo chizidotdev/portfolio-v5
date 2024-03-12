@@ -25,7 +25,7 @@
 			{#each snippets as snippet}
 				<a href={`/snippets/${snippet.slug}`}>
 					<ArticleItem variant="compact" showLink={false}>
-						<Text variant="h4">{snippet.title}</Text>
+						<Text variant="h3">{snippet.title}</Text>
 						<Text asLabel>{snippet.description}</Text>
 					</ArticleItem>
 				</a>

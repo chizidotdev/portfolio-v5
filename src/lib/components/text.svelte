@@ -6,9 +6,8 @@
 		variants: {
 			variant: {
 				h1: 'scroll-m-20 text-3xl tracking-tight lg:text-4xl',
-				h2: 'scroll-m-20 text-2xl tracking-tight first:mt-0',
-				h3: 'scroll-m-20 text-xl tracking-tight',
-				h4: 'scroll-m-20 text-lg tracking-tight',
+				h2: 'scroll-m-20 text-lg tracking-tight first:mt-0',
+				h3: 'scroll-m-20 text-lg tracking-tight',
 				p: 'leading-6'
 			},
 			asLabel: {
@@ -31,8 +30,6 @@
 	<h2 class={textVariants({ variant, asLabel, class: $$props.class })}><slot /></h2>
 {:else if variant === 'h3'}
 	<h3 class={textVariants({ variant, asLabel, class: $$props.class })}><slot /></h3>
-{:else if variant === 'h4'}
-	<h4 class={textVariants({ variant, asLabel, class: $$props.class })}><slot /></h4>
 {:else}
 	<p class={textVariants({ variant, asLabel, class: $$props.class })}><slot /></p>
 {/if}

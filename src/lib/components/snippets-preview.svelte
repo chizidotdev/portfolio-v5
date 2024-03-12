@@ -6,7 +6,7 @@
 
 {#if snippets?.length}
 	<section class="">
-		<Text variant="h4" class="flex items-center gap-2">
+		<Text variant="h2" class="flex items-center gap-2">
 			Snippets <Badge>New</Badge>
 		</Text>
 
@@ -14,7 +14,7 @@
 			{#each snippets as snippet}
 				<a href={`/snippets/${snippet.slug}`}>
 					<ArticleItem variant="compact">
-						<Text variant="h4">{snippet.title}</Text>
+						<Text variant="h3">{snippet.title}</Text>
 						<Text asLabel>{snippet.description}</Text>
 					</ArticleItem>
 				</a>

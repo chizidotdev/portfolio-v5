@@ -35,11 +35,11 @@
 	<SnippetsPreview snippets={data.snippets} />
 
 	<section>
-		<Text variant="h4">Projects</Text>
+		<Text variant="h2">Projects</Text>
 		{#each personalData.projects as project}
 			<a href={project.link} target="_blank" rel="noopener noreferrer">
 				<ArticleItem>
-					<Text variant="h4" class="flex items-center gap-2">
+					<Text variant="h3" class="flex items-center gap-2">
 						{project.title}
 						{#if project.pending}
 							<Badge variant="secondary">In progress</Badge>
