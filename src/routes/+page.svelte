@@ -14,6 +14,12 @@
 		name="description"
 		content="Software developer and unabashed nerd. Building (and occasionally designing) accessible and timeless digital experiences."
 	/>
+	<meta property="og:title" content="Chizi Victor - Software Developer" />
+	<meta
+		property="og:description"
+		content="Software developer and unabashed nerd. Building (and occasionally designing) accessible and timeless digital experiences."
+	/>
+	<meta property="og:image" content="/preview.png" />
 </svelte:head>
 
 <section class="space-y-14 md:space-y-20">

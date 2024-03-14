@@ -12,6 +12,9 @@
 	<title>Snippets - Chizi Victor</title>
 	<meta name="title" content="Snippets - Chizi Victor" />
 	<meta name="description" content={description} />
+	<meta property="og:description" content={description} />
+	<meta property="og:title" content="Snippets - Chizi Victor" />
+	<meta property="og:type" content="article" />
 </svelte:head>
 
 {#if snippets?.length}

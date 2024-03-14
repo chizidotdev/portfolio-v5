@@ -9,6 +9,7 @@
 <svelte:head>
 	<title>{data.meta.title} - Chizi Victor</title>
 	<meta name="description" content={data.meta.description} />
+	<meta property="og:description" content={data.meta.description} />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:type" content="article" />
 </svelte:head>
