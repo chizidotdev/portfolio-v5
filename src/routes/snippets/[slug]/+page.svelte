@@ -14,8 +14,8 @@
 	<meta property="og:type" content="article" />
 </svelte:head>
 
-<a href=".">
-	<Button variant="outline" class="mb-5"><ChevronLeftIcon class="w-4 mr-2" /> Back</Button>
+<a href="/snippets">
+	<Button variant="outline" class="mb-5"><ChevronLeftIcon class="w-4 mr-2" /> Snippets</Button>
 </a>
 
 <article class="flex flex-col gap-10">

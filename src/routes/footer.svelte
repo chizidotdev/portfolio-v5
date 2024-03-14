@@ -4,8 +4,11 @@
 	import { TwitterIcon, GithubIcon, LinkedinIcon, MailIcon } from '$lib/icons';
 </script>
 
-<footer class="flex flex-col items-center sm:items-start justify-between gap-10 mt-10">
-	<a href="/snippets" class={buttonStyles({ variant: 'link' })}>Snippets</a>
+<footer class="flex flex-col items-center sm:items-start justify-between gap-12 mt-14">
+	<div class="flex items-center gap-6">
+		<a href="/" class={buttonStyles({ variant: 'link' })}>Home</a>
+		<a href="/snippets" class={buttonStyles({ variant: 'link' })}>Snippets</a>
+	</div>
 
 	<div class="flex items-center gap-3">
 		{#each personalData.socials as link}
