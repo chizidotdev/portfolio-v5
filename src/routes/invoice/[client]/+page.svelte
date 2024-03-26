@@ -38,6 +38,7 @@
 
 <svelte:head>
 	<script src="https://js.paystack.co/v1/inline.js" on:load={initializePaystack}></script>
+	<title>Winewave LTD - Ecommerce StoreFront Invoice</title>
 </svelte:head>
 
 <div class="flex flex-col gap-10">
