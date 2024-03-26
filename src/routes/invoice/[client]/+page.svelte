@@ -6,7 +6,7 @@
 	import { PUBLIC_PAYSTACK_PUBLIC_KEY } from '$env/static/public';
 	import { info, items } from './data';
 
-	let totalAmount = formatCurrency(1500000);
+	let totalAmount = formatCurrency(1600000);
 
 	let handler: any;
 	function initializePaystack() {
@@ -17,8 +17,8 @@
 
 		handler = window.PaystackPop.setup({
 			key: PUBLIC_PAYSTACK_PUBLIC_KEY, // Replace with your public key
-			email: 'chiziwokoma@gmail.com',
-			amount: 1500000 * 100,
+			email: 'winewaveng@gmail.com',
+			amount: 1600000 * 100,
 			ref: Date.now(),
 			// label: "Optional string that replaces customer email"
 			onClose: function () {
@@ -44,8 +44,8 @@
 	<section class="space-y-3">
 		<Text variant="h1">Ecommerce StoreFront</Text>
 		<Text>
-			Savy has grown as a wine brewery and needs to enhance its online presence to this growth. The
-			company has decided to launch an online store to sell its products.
+			Winewave LTD is expanding and needs to enhance its online presence to this growth. The company
+			has decided to launch an online store to sell its products.
 			<!-- The store will have a catalog of products, a shopping cart, and a checkout process. The store will also have a user -->
 			<!-- profile section where users can view their order history and manage their account. -->
 		</Text>
@@ -96,15 +96,19 @@
 				<Accordion.Trigger>Payments?</Accordion.Trigger>
 				<Accordion.Content>
 					We require a 50% deposit before we start the project. The remaining 50% is due upon
-					completion of the project. We accept bank transfers and credit card payments.
+					completion of the project.
 				</Accordion.Content>
 			</Accordion.Item>
 		</Accordion.Root>
 	</section>
 
-	<section class="space-y-3">
-		<Text variant="h2">Invoice</Text>
-		<Button>Download PDF&nbsp;&nbsp;<DownloadIcon class="w-4 stroke-primary-foreground" /></Button>
+	<section>
+		<Text class="mb-4" variant="h2">Invoice</Text>
+		<a href="/invoice/invoice_winewave.pdf" target="_blank" rel="noopener noreferrer">
+			<Button>
+				Download PDF&nbsp;&nbsp;<DownloadIcon class="w-4 stroke-primary-foreground" />
+			</Button>
+		</a>
 	</section>
 
 	<section

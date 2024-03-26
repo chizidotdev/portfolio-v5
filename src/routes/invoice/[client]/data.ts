@@ -1,8 +1,8 @@
 export let info = [
-	{ label: 'Quote for', values: ['Savy', 'info@savy.com'] },
-	{ label: 'Quote by', values: ['Chizi Victor', '903-739-0992'] },
+	{ label: 'Quote for', values: ['Winewave LTD', '0915-760-6264'] },
+	{ label: 'Quote by', values: ['Chizi Victor', '0903-739-0992'] },
 	{ label: 'Issue date', values: ['2024-03-26'] },
-	{ label: 'Expiration date', values: ['2024-04-26'] }
+	{ label: 'Expiration date', values: ['2024-04-23'] }
 ];
 
 export type ItemType = 'design' | 'code' | 'support' | 'integration';
@@ -30,13 +30,19 @@ export let items: Item[] = [
 		title: 'Storefront Development',
 		description:
 			'Building the website, integrating the agreed design, and making sure everything works as expected.',
-		price: 800000
+		price: 600000
 	},
 	{
 		type: 'code',
 		title: 'CMS Development',
 		description: 'Building the Content Management System (CMS) for the website.',
 		price: 500000
+	},
+	{
+		type: 'integration',
+		title: 'Payment Gateway',
+		description: 'Setting up a payment gateway to receive payments online.',
+		price: 300000
 	},
 	{
 		type: 'integration',
