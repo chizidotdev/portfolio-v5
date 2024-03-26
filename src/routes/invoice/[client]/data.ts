@@ -30,19 +30,19 @@ export let items: Item[] = [
 		title: 'Storefront Development',
 		description:
 			'Building the website, integrating the agreed design, and making sure everything works as expected.',
-		price: 600000
+		price: 500000
 	},
 	{
 		type: 'code',
 		title: 'CMS Development',
 		description: 'Building the Content Management System (CMS) for the website.',
-		price: 500000
+		price: 200000
 	},
 	{
 		type: 'integration',
 		title: 'Payment Gateway',
 		description: 'Setting up a payment gateway to receive payments online.',
-		price: 300000
+		price: 100000
 	},
 	{
 		type: 'integration',

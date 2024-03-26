@@ -1,24 +1,27 @@
 <script lang="ts">
-	import { Text, Accordion, Button } from '$lib/components';
+	import { Text, Accordion, Button, buttonStyles } from '$lib/components';
 	import DownloadIcon from 'lucide-svelte/icons/download';
-	import { formatCurrency } from '$lib/utils';
+	import { formatCurrency, cn } from '$lib/utils';
 	import Item from './item.svelte';
 	import { PUBLIC_PAYSTACK_PUBLIC_KEY } from '$env/static/public';
 	import { info, items } from './data';
+	import type { PageData } from './$types';
 
-	let totalAmount = formatCurrency(1600000);
+	export let data: PageData;
+	let totalAmount = formatCurrency(1000000);
+	let amountDue = formatCurrency(500000);
 
 	let handler: any;
 	function initializePaystack() {
 		if (!window.PaystackPop) {
-			console.error('Paystack is not available.');
+			console?.error('Paystack is not available.');
 			return;
 		}
 
 		handler = window.PaystackPop.setup({
 			key: PUBLIC_PAYSTACK_PUBLIC_KEY, // Replace with your public key
 			email: 'winewaveng@gmail.com',
-			amount: 1600000 * 100,
+			amount: 500000 * 100,
 			ref: Date.now(),
 			// label: "Optional string that replaces customer email"
 			onClose: function () {
@@ -38,7 +41,7 @@
 
 <svelte:head>
 	<script src="https://js.paystack.co/v1/inline.js" on:load={initializePaystack}></script>
-	<title>Winewave LTD - Ecommerce StoreFront Invoice</title>
+	<title>Invoice - Winewave LTD</title>
 </svelte:head>
 
 <div class="flex flex-col gap-10">
@@ -47,8 +50,6 @@
 		<Text>
 			Winewave LTD is expanding and needs to enhance its online presence to this growth. The company
 			has decided to launch an online store to sell its products.
-			<!-- The store will have a catalog of products, a shopping cart, and a checkout process. The store will also have a user -->
-			<!-- profile section where users can view their order history and manage their account. -->
 		</Text>
 	</section>
 
@@ -68,16 +69,28 @@
 			<Item {item} />
 		{/each}
 
-		<div class="flex justify-between items-center py-6">
-			<Text asLabel>Total in NGN:</Text>
-			<Text variant="h2">{totalAmount}</Text>
+		<div class="py-6 flex flex-col gap-3">
+			<div class="flex justify-between items-center">
+				<Text asLabel>Total in NGN:</Text>
+				<Text variant="h2">{totalAmount}</Text>
+			</div>
+			<div class="flex justify-between items-center">
+				<Text asLabel>Amount Due:</Text>
+				<Text variant="h2">{amountDue}</Text>
+			</div>
+			<a
+				href="{data.client}/receipt"
+				class={cn(buttonStyles({ variant: 'link' }), 'w-min self-end mt-4')}
+			>
+				View Receipts
+			</a>
 		</div>
 	</section>
 
 	<section class="space-y-3">
 		<Text variant="h2">Additional Info</Text>
 
-		<Accordion.Root>
+		<Accordion.Root multiple>
 			<Accordion.Item value="item-1">
 				<Accordion.Trigger>Scope changes</Accordion.Trigger>
 				<Accordion.Content>
@@ -105,7 +118,7 @@
 
 	<section>
 		<Text class="mb-4" variant="h2">Invoice</Text>
-		<a href="/invoice/invoice_winewave.pdf" target="_blank" rel="noopener noreferrer">
+		<a href="/invoices/winewaveng.pdf" target="_blank" rel="noopener noreferrer">
 			<Button>
 				Download PDF&nbsp;&nbsp;<DownloadIcon class="w-4 stroke-primary-foreground" />
 			</Button>
@@ -124,7 +137,7 @@
 			<Button size="lg" class="w-full" variant="secondary">Ask a question</Button>
 		</a>
 		<Button on:click={payWithPaystack} size="lg" class="w-full" variant="primary">
-			Pay now - {totalAmount}
+			Pay now - {amountDue}
 		</Button>
 	</section>
 </div>
