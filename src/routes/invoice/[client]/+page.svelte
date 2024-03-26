@@ -115,7 +115,7 @@
 		class="flex justify-between items-center gap-3 py-6 sticky bottom-0 bg-background border-t -mx-2 px-2"
 	>
 		<a
-			href="https%3A%2F%2Fwa.me%2F%2B2349037390992%3Ftext%3DI%20would%20like%20to%20know%3A%20%5Cn%5Cn"
+			href="https://wa.me/+2349037390992?text=Hello%2C%20I%20have%20a%20question.%0A"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="w-full"
