@@ -43,6 +43,7 @@
 		"@sanity/block-content-to-markdown": "^0.0.5",
 		"@sanity/client": "^6.15.3",
 		"@types/node": "^20.11.25",
+		"bits-ui": "^0.21.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",
 		"date-and-time": "^3.1.1",

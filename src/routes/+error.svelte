@@ -3,7 +3,7 @@
 	import { Button, Text } from '$lib/components';
 	import { onMount } from 'svelte';
 
-	$: networkStatus = '';
+	let networkStatus: 'online' | 'offline' = 'online';
 
 	onMount(() => {
 		networkStatus = window.navigator.onLine ? 'online' : 'offline';
@@ -13,7 +13,7 @@
 </script>
 
 <section class="py-20">
-	{#if !!networkStatus}
+	{#if networkStatus === 'offline'}
 		<Text variant="h2">Network Error</Text>
 		<Text>You are currently offline. Please check your internet connection and try again.</Text>
 	{:else}

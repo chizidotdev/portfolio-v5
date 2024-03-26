@@ -14,7 +14,7 @@ export const personalData = {
 			title: 'Copia',
 			link: 'https://copia.aidmedium.com',
 			summary:
-				'Headless e-commerce platform for small businesses and direct sales representatives.',
+				'Headless multi-vendor e-commerce platform for small businesses and direct sales representatives.',
 			pending: true
 		},
 		{
