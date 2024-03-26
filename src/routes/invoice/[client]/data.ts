@@ -1,6 +1,6 @@
 export let info = [
 	{ label: 'Quote for', values: ['Savy', 'info@savy.com'] },
-	{ label: 'Quote by', values: ['Chizi Victor', 'hey@chizi.dev'] },
+	{ label: 'Quote by', values: ['Chizi Victor', '903-739-0992'] },
 	{ label: 'Issue date', values: ['2024-03-26'] },
 	{ label: 'Expiration date', values: ['2024-04-26'] }
 ];

@@ -3,10 +3,42 @@
 	import DownloadIcon from 'lucide-svelte/icons/download';
 	import { formatCurrency } from '$lib/utils';
 	import Item from './item.svelte';
+	import { PUBLIC_PAYSTACK_PUBLIC_KEY } from '$env/static/public';
 	import { info, items } from './data';
 
 	let totalAmount = formatCurrency(1500000);
+
+	let handler: any;
+	function initializePaystack() {
+		if (!window.PaystackPop) {
+			console.error('Paystack is not available.');
+			return;
+		}
+
+		handler = window.PaystackPop.setup({
+			key: PUBLIC_PAYSTACK_PUBLIC_KEY, // Replace with your public key
+			email: 'chiziwokoma@gmail.com',
+			amount: 1500000 * 100,
+			ref: Date.now(),
+			// label: "Optional string that replaces customer email"
+			onClose: function () {
+				alert('Payment cancelled');
+			},
+			callback: function (response: any) {
+				let message = 'Payment complete! Reference: ' + response.reference;
+				alert(message);
+			}
+		});
+	}
+
+	function payWithPaystack() {
+		handler.openIframe();
+	}
 </script>
+
+<svelte:head>
+	<script src="https://js.paystack.co/v1/inline.js" on:load={initializePaystack}></script>
+</svelte:head>
 
 <div class="flex flex-col gap-10">
 	<section class="space-y-3">
@@ -42,7 +74,7 @@
 	</section>
 
 	<section class="space-y-3">
-		<Text variant="h2">Conditions</Text>
+		<Text variant="h2">Additional Info</Text>
 
 		<Accordion.Root>
 			<Accordion.Item value="item-1">
@@ -76,7 +108,7 @@
 	</section>
 
 	<section
-		class="flex justify-between items-center gap-3 pt-6 sticky bottom-0 bg-background border-t -mx-2 px-2"
+		class="flex justify-between items-center gap-3 py-6 sticky bottom-0 bg-background border-t -mx-2 px-2"
 	>
 		<a
 			href="https%3A%2F%2Fwa.me%2F%2B2349037390992%3Ftext%3DI%20would%20like%20to%20know%3A%20%5Cn%5Cn"
@@ -86,6 +118,8 @@
 		>
 			<Button size="lg" class="w-full" variant="secondary">Ask a question</Button>
 		</a>
-		<Button size="lg" class="w-full" variant="primary">Pay now - {totalAmount}</Button>
+		<Button on:click={payWithPaystack} size="lg" class="w-full" variant="primary">
+			Pay now - {totalAmount}
+		</Button>
 	</section>
 </div>
