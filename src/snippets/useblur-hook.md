@@ -5,7 +5,7 @@ date: 2022-10-11T12:33:25Z
 published: true
 ---
 
-```tsx
+```ts
 const useBlur = (callback: () => void) => {
   const ref = useRef<HTMLDivElement | null>(null);
 

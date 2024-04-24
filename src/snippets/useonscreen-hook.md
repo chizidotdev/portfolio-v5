@@ -5,7 +5,7 @@ date: 2022-10-02T02:43:38Z
 published: true
 ---
 
-```jsx
+```js
 import { useEffect, useState } from "react";
 
 function useOnScreen(ref, threshold = 0.3) {
