@@ -27,7 +27,7 @@
 		<!-- <Text asLabel>{formatDate(new Date(data.meta.date), 'MMM DD, YYYY')}</Text> -->
 	</hgroup>
 
-	<div>
+	<div class="space-y-3">
 		<svelte:component this={data.content} />
 	</div>
 </article>

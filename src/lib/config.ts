@@ -14,14 +14,13 @@ export const personalData = {
 			title: 'Thoughts',
 			link: 'https://thoughts.aidmedium.com',
 			summary:
-				"Seamlessly capture and organize your thoughts, ideas, and inspirations, as you embark on your literary journey.",
+				'Seamlessly capture and organize your thoughts, ideas, and inspirations, as you embark on your literary journey.',
 			pending: true
 		},
 		{
 			title: 'Winewave',
-			link: 'https://winewave.up.railway.app/',
-			summary:
-				'Custom storefront for a winery, with a focus on user experience and accessibility.',
+			link: 'https://winewave.ng/',
+			summary: 'Custom storefront for a winery, with a focus on user experience and accessibility.',
 			pending: true
 		},
 		{
