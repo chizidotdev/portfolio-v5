@@ -15,6 +15,7 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:title" content="Snippets - Chizi Victor" />
 	<meta property="og:type" content="article" />
+	<meta property="og:image" content="/og-snippets.png" />
 </svelte:head>
 
 {#if snippets?.length}
