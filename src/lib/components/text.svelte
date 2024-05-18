@@ -8,7 +8,7 @@
 				h1: 'scroll-m-20 text-3xl tracking-tight lg:text-4xl',
 				h2: 'scroll-m-20 text-lg tracking-tight first:mt-0',
 				h3: 'scroll-m-20 text-lg tracking-tight',
-				p: 'leading-6'
+				p: 'leading-7'
 			},
 			asLabel: {
 				true: 'text-muted-foreground'

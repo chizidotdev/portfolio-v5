@@ -4,10 +4,11 @@
 	import { TwitterIcon, GithubIcon, LinkedinIcon, MailIcon } from '$lib/icons';
 </script>
 
-<footer class="flex flex-col items-center sm:items-start justify-between gap-12 mt-14">
+<footer class="mt-14 flex flex-col items-center justify-between gap-12 sm:items-start">
 	<div class="flex items-center gap-6">
-		<a href="/" class={buttonStyles({ variant: 'link' })}>Home</a>
-		<a href="/snippets" class={buttonStyles({ variant: 'link' })}>Snippets</a>
+		<a href="/" class={buttonStyles({ variant: 'link' })}>home</a>
+		<a href="/work" class={buttonStyles({ variant: 'link' })}>work</a>
+		<a href="/snippets" class={buttonStyles({ variant: 'link' })}>snippets</a>
 	</div>
 
 	<div class="flex items-center gap-3">

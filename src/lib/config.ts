@@ -11,19 +11,6 @@ export const personalData = {
         Currently Frontend Engineer at Pioneering Programmers.`,
 	projects: [
 		{
-			title: 'Thoughts',
-			link: 'https://thoughts.aidmedium.com',
-			summary:
-				'Seamlessly capture and organize your thoughts, ideas, and inspirations, as you embark on your literary journey.',
-			pending: true
-		},
-		{
-			title: 'Winewave',
-			link: 'https://winewave.ng/',
-			summary: 'Custom storefront for a winery, with a focus on user experience and accessibility.',
-			pending: true
-		},
-		{
 			title: 'Copia',
 			link: 'https://copia.aidmedium.com',
 			summary:
@@ -31,10 +18,16 @@ export const personalData = {
 			pending: true
 		},
 		{
+			title: 'Winewave',
+			link: 'https://winewave.ng/',
+			summary: 'Custom storefront for a winery, with a focus on user experience and accessibility.',
+			pending: false
+		},
+		{
 			title: 'Aidmedium',
 			link: 'https://aidmedium.com',
 			summary:
-				'A web design and development agency concept helping individuals and businesses grow their online presence.',
+				'A creative digital product studio helping individuals and businesses grow their online presence.',
 			pending: false
 		},
 		{

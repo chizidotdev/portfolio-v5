@@ -1,16 +1,14 @@
 <script lang="ts">
-	import { Button, Text, ArticleItem, Badge } from '$lib/components';
+	import { Button, Text, ArticleItem } from '$lib/components';
 
 	export let snippets;
 </script>
 
 {#if snippets?.length}
 	<section class="">
-		<Text variant="h2" class="flex items-center gap-2">
-			Snippets <Badge>New</Badge>
-		</Text>
+		<Text variant="h2" class="flex items-center gap-2">Snippets</Text>
 
-		<div class="flex flex-col gap-2 mt-4">
+		<div class="mt-4 flex flex-col gap-2">
 			{#each snippets as snippet}
 				<a href={`/snippets/${snippet.slug}`}>
 					<ArticleItem variant="compact">

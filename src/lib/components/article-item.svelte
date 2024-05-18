@@ -8,15 +8,15 @@
 
 <article
 	class={cn(
-		'flex items-center gap-4 h-full',
-		'group py-4 rounded-lg transition-colors',
-		variant === 'compact' && 'px-4 bg-gradient-to-br from-muted border border-muted'
+		'flex h-full items-center gap-4',
+		'group rounded-lg py-4 transition-colors',
+		variant === 'compact' && 'border bg-gradient-to-br from-muted px-4'
 	)}
 >
 	<div class="h-full flex-1"><slot /></div>
 
 	{#if showLink}
-		<span class="group-hover:opacity-100 md:opacity-0 md:px-4 transition-opacity">
+		<span class="transition-opacity group-hover:opacity-100 md:px-4 md:opacity-0">
 			<LinkIcon class="text-muted-foreground" />
 		</span>
 	{/if}

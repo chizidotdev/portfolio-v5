@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Text, ArticleItem, Badge } from '$lib/components';
+	import { Text, ArticleItem } from '$lib/components';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -20,12 +20,10 @@
 
 {#if snippets?.length}
 	<section>
-		<Text variant="h1" class="flex items-center gap-2">
-			Snippets <Badge>New</Badge>
-		</Text>
+		<Text variant="h1" class="mb-4 flex items-center gap-2">Snippets</Text>
 		<Text>{description}</Text>
 
-		<div class="grid sm:grid-cols-2 gap-3 mt-10">
+		<div class="mt-10 grid gap-3 sm:grid-cols-2">
 			{#each snippets as snippet}
 				<a href={`/snippets/${snippet.slug}`}>
 					<ArticleItem variant="compact" showLink={false}>
