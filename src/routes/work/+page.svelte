@@ -5,7 +5,7 @@
 	import CyteCode from './cyte-code.md';
 
 	let description =
-		'Software developer and unabashed nerd. Building (and occasionally designing) accessible and timeless digital experiences.';
+		'Frontend-focused software engineer with extensive experience in developing a wide array of products, ranging from managed service provider (MSP) and e-commerce software to animated portfolio showcases for creative agencies and professionals.';
 </script>
 
 <svelte:head>
@@ -15,18 +15,14 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:title" content="Work - Chizi Victor" />
 	<meta property="og:type" content="article" />
-	<meta property="og:image" content="/preview.png" />
+	<meta property="og:image" content="/og-work.png" />
 </svelte:head>
 
 <hgroup class="mb-8">
 	<Text variant="h1" class="mb-4 flex items-center gap-2">
 		Work <Badge>New</Badge>
 	</Text>
-	<Text>
-		Frontend-focused software engineer with extensive experience in developing a wide array of
-		products, ranging from managed service provider (MSP) and e-commerce software to animated
-		portfolio showcases for creative agencies and professionals.
-	</Text>
+	<Text>{description}</Text>
 </hgroup>
 
 <div class="border-t py-6">
