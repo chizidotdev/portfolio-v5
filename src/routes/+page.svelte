@@ -34,11 +34,9 @@
 		<Text>{personalData.summary}</Text>
 
 		<a href="mailto:chiziwokoma@gmail.com" class="mt-2 w-fit">
-			<Button variant="primary"><MailIcon class="w-4 mr-2 stroke-foreground" /> Contact me</Button>
+			<Button variant="primary"><MailIcon class="mr-2 w-4 stroke-foreground" /> Contact me</Button>
 		</a>
 	</section>
-
-	<SnippetsPreview snippets={data.snippets} />
 
 	<section>
 		<Text variant="h2">Projects</Text>
@@ -58,4 +56,6 @@
 			</a>
 		{/each}
 	</section>
+
+	<SnippetsPreview snippets={data.snippets} />
 </section>

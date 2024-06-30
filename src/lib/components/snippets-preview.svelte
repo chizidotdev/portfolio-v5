@@ -7,6 +7,7 @@
 {#if snippets?.length}
 	<section class="">
 		<Text variant="h2" class="flex items-center gap-2">Snippets</Text>
+		<Text asLabel>Bunch of stuff I keep forgetting no matter how much I use em.</Text>
 
 		<div class="mt-4 flex flex-col gap-2">
 			{#each snippets as snippet}

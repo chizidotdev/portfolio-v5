@@ -5,7 +5,7 @@
 	export let data: PageData;
 	$: snippets = data.snippets;
 	let description =
-		"A collection of code snippets I've developed/stolen over time and tend to use often. Ranging from random utililty hooks to environment setup instructions.";
+		"TLDR; Bunch of stuff I keep forgetting no matter how much I use em. A collection of code snippets I've developed/stolen over time and tend to use often. Ranging from random utililty hooks to environment setup instructions.";
 </script>
 
 <svelte:head>
